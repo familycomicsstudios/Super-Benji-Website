@@ -36,10 +36,15 @@
   </head>
   <body>
     <header>
-      <nav>
-      </nav>
       <h1>Super Benji Official Site</h1>
     </header>
+    <nav>
+      <a href="{{ "/" | relative_url }}" class="btn btn-primary">Home</a>
+      <a href="{{ "/animation.html" | relative_url }}" class="btn btn-primary">Animation</a>
+      <a href="{{ "/games.html" | relative_url }}" class="btn btn-primary">Games</a>
+      <a href="{{ "/books.html" | relative_url }}" class="btn btn-primary">Books & Comics</a>
+      <a href="{{ "/othercontent.html" | relative_url }}" class="btn btn-primary">Extra Content</a>
+    </nav>
     <div class="main">
       {{ content }}
       <footer>

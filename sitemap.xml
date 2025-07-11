@@ -10,38 +10,20 @@
 
   <!-- Major Sections -->
   <url>
-    <loc>https://superbenji.themadpunter.tech/#animated-series</loc>
+    <loc>https://superbenji.themadpunter.tech/animation.html</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://superbenji.themadpunter.tech/#movies</loc>
-    <priority>0.8</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://superbenji.themadpunter.tech/#games</loc>
+    <loc>https://superbenji.themadpunter.tech/games.html</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
-    <loc>https://superbenji.themadpunter.tech/#books-comics</loc>
+    <loc>https://superbenji.themadpunter.tech/books.html</loc>
     <priority>0.6</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://superbenji.themadpunter.tech/#wiki</loc>
-    <priority>0.5</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://superbenji.themadpunter.tech/#discord</loc>
-    <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
 
