@@ -5,6 +5,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #eeeeee;
+    max-width: 100%;
 }
 .main {
     background-color: #23272A;
