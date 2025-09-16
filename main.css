@@ -62,3 +62,25 @@ header {
     margin-right: 2px;
     margin-left: 2px;
 }
+
+/* Make all images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Catch-all for iframes/videos so they scale inside parent container */
+iframe, embed, object {
+    max-width: 100%;
+}
+
+/* Optional: center your content and limit crazy-wide monitors */
+body {
+    margin: 0;
+}
+
+.main {
+    max-width: 1200px; /* You can tweak this */
+    margin: 0 auto;
+}
