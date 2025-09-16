@@ -70,7 +70,11 @@ img {
     display: block;
 }
 
-/* Catch-all for iframes/videos so they scale inside parent container */
-iframe, embed, object {
+.main img,
+.main iframe,
+.main embed,
+.main object {
     max-width: 100%;
+    height: auto;
+    display: block;
 }
