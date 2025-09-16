@@ -74,13 +74,3 @@ img {
 iframe, embed, object {
     max-width: 100%;
 }
-
-/* Optional: center your content and limit crazy-wide monitors */
-body {
-    margin: 0;
-}
-
-.main {
-    max-width: 1200px; /* You can tweak this */
-    margin: 0 auto;
-}
