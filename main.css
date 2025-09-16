@@ -7,6 +7,22 @@ body {
     color: #eeeeee;
     max-width: 100%;
 }
+/* Make all images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.main img,
+.main iframe,
+.main embed,
+.main object {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+}
 .main {
     background-color: #23272A;
     padding-left: 5%;
@@ -66,19 +82,4 @@ header {
     margin-left: 2px;
 }
 
-/* Make all images responsive */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
 
-.main img,
-.main iframe,
-.main embed,
-.main object {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    box-sizing: border-box;
-}
