@@ -1,12 +1,16 @@
 body {
     background-color: #23272A;
     background-image: url("background.png");
-    background-size: 100% auto;
+    background-size: cover; /* Ensures the image covers the entire viewport */
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
     color: #eeeeee;
-    max-width: 100%;
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    width: 100%; /* Ensure the body width is 100% */
+    height: 100vh; /* Ensure the body takes up the full viewport height */
 }
+
 /* Make all images responsive */
 img {
     max-width: 100%;
