@@ -1,5 +1,6 @@
 body {
-    background-color: #23272A;
+    background-color: #00256e;
+    background-color: linear-gradient(180deg, rgba(0, 37, 110, 1) 47%, rgba(0, 125, 12, 1) 100%);
     background-image: url("background.png");
     background-size: cover; /* Ensures the image covers the entire viewport */
     background-repeat: no-repeat;
@@ -35,6 +36,7 @@ img {
     max-width: 100%;
     box-sizing: border-box;
     overflow-x: hidden; /* This prevents horizontal scrollbars if something misbehaves */
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
 }
 .video-container {
     aspect-ratio: 16/9;
