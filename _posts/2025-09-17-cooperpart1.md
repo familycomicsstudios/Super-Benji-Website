@@ -4,7 +4,7 @@ title: Cooper - Part 1
 date: 2025-09-17
 ---
 ## Cooper: Part 1
-Cooper walks in to the Joe's Sporting goods store, a sporting goods store in Lake Geneva, Wisconsin. He walks up to the counter holding a baseball bat.
+Cooper walks in to the Joe's Sporting goods store, a sporting goods store in Lake Geneva, Wisconsin. He walks up to the counter.
 
 "Hello, can I buy a baseball bat?" Cooper asks the worker.
 
