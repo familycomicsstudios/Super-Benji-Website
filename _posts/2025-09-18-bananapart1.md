@@ -6,7 +6,7 @@ date: 2025-09-18
 
 # Banana: Part 1
 
-The date is January 19th, 1966, and at the Banana Enterprises factory in LAke Geneva, two workers
+The date is January 19th, 1966, and at the Banana Enterprises factory in Lake Geneva, two workers
 make firearms.
 
 "This sucks, man," the first worker says.
@@ -25,7 +25,7 @@ have. I hear that you two are slacking off and talking."
 "Uhh, no, no, sir," the first worker, Jerry, says. "We would never say anything against you behind your
 back."
 
-"That's what I thought," says the boss. "However, you have failed to realize that this is a very open
+"That's what I thought," says the boss. "However, you seem to have forgotten that this is a very open
 room. I've been listening to you the whole time. I just got closer and heard what you guys were saying."
 
 "So sorry, sir," says Nathan. "It was an accident. We promise that we will never talk about you like
@@ -139,7 +139,7 @@ fly out of the hole on the roof.
 
 ---
 
-After a couple minutes, a the banana that fell into the radioactive waste sticks a hand out of the
+After a couple minutes, the banana that fell into the radioactive waste sticks a hand out of the
 vial of nuclear waste and pulls himself up. The banana has grown to be as tall as a human, with
 arms and legs, a face, and an evil smile. He pulls himself out of the radioactive waste, and
 as the waste drains out of him, his yellow peel shines in the light from the hole in the
@@ -189,7 +189,7 @@ last name of the married couple, Jean and Dave Grace.
 "Well, that just happened," says Jean.
 
 "Don't worry, Jean. You don't need to feel guilty for killing the mayor," says Dave. "He deserved it
-for all of the bad things he done. Now all of his workers - or slaves, more like; are free."
+for all of the bad things he done. Now all of his workers - or slaves, more like - are free."
 
 "I'm more concerned about this murder tarnishing our legacy," says Jean. "We're supposed to save people,
 not kill them."
@@ -206,7 +206,7 @@ an illegal factory on the outskirts of the city, and stole money from the city's
 moving to a private island.
 
 "Nobody is very happy about the fact that the mayor was killed. Most people in the city wanted
-him to have a fair trial and be removed from his position, because he's a good person. After a popular
+him to have a fair trial and be removed from his position. After a popular
 vote by the city, we have an arrest warrant for Jean and Dave for a charge of third degree murder."
 
 "Well, the jig is up," says Jean. "I told you we needed to bring him back alive! Let's get out of here!"
@@ -223,7 +223,7 @@ the doors, and the car takes off and flies towards the Atlantic Ocean.
 
 ---
 
-At the Riviera by the edge of Lake Geneva, a boat is docked, enchristened the S. S. Banana. Dr. Banana
+At the Riviera by the edge of Lake Geneva, a boat is docked, christened the S. S. Banana. Dr. Banana
 and the workers of the factory are standing by the boat, carrying supplies taken from the Banana
 Enterprises factory.
 
