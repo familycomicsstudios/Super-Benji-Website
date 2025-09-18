@@ -2,8 +2,6 @@
 layout: base
 title: Super Benji Web | Super Benji Show, Movies, Games, and Comics
 ---
-
-<h2>Super Benji Web</h2>
 <p>
     Super Benji Web is a series of content exclusive to the Super Benji Website. This can
     include short stories, webcomics, and more. This page was inspired by sites that hosted
@@ -14,7 +12,7 @@ title: Super Benji Web | Super Benji Show, Movies, Games, and Comics
     Look here for a list of the latest Super Benji Web content.
 </p>
 <ul>
-  {% for post in site.posts reversed %}
+  {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
     </li>
