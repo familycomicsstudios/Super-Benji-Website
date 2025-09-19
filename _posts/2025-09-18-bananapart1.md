@@ -102,7 +102,7 @@ what that toxic waste can do..."
 Bryce walks down to the container of toxic waste. "How am I supposed to check it and see what's inside?"
 he says. "I can't go in, because I'm going to die, so do I just wait this out?"
 
-A ceiling tile falls from the ceiling and sends Bryce flying. Jean and Grace, the superheroes that defend
+A ceiling tile falls from the ceiling and sends Bryce flying. Jean and Dave Grace, the superheroes that defend
 the city of Lake Geneva, fly down from the ceiling and hover over the vat of toxic waste.
 
 "Aha! What kind of illegal operation is going on here?" exclaims Dave.
