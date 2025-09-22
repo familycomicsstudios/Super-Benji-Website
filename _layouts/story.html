@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>{{ page.title | default: "Super Benji Official | Super Benji Show, Movies, Games, and Comics" }}</title>
-    <link rel="icon" href="{{ "/favicon.png" | relative_url }}">
+    <link rel="icon" href="/favicon.png">
     <meta charset="UTF-8" />
     <meta name="description" content="Explore the official Super Benji universe! Watch the Super Benji Show and movie trilogy, play Super Benji games, read comics like The Minion Manifesto, and discover everything about the League of Grace and Dr. Banana. Created by triangle5820 and themadpunter.">
     <!-- <link rel="manifest" href="manifest.json" /> -->
@@ -35,14 +35,16 @@
 
   </head>
   <body>
+    <div class="page-container">
     <div class="main">
-    <a href="/superbenjiweb.html" class="btn btn-primary">Back to Super Benji Web</a>
+    <a href="/superbenjiweb.html">Back to Super Benji Web</a>
       {{ content }}
       <footer>
       <small>
           <p>&copy 2025 FC Studios</p>
       </small>
       </footer>
+    </div>
     </div>
   </body>
 </html>

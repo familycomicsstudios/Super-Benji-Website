@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>{{ page.title | default: "Super Benji Official | Super Benji Show, Movies, Games, and Comics" }}</title>
-    <link rel="icon" href="{{ "/favicon.png" | relative_url }}">
+    <link rel="icon" href="/favicon.png">
     <meta charset="UTF-8" />
     <meta name="description" content="Explore the official Super Benji universe! Watch the Super Benji Show and movie trilogy, play Super Benji games, read comics like The Minion Manifesto, and discover everything about the League of Grace and Dr. Banana. Created by triangle5820 and themadpunter.">
     <!-- <link rel="manifest" href="manifest.json" /> -->
@@ -35,25 +35,27 @@
 
   </head>
   <body>
-    <header>
-      <h1>Super Benji Official Site</h1>
-    </header>
-    <div class="main">
+    <div class="page-container">
+      <header>
+        <h1>Super Benji Official Site</h1>
         <nav>
-        <a href="/" class="btn btn-primary">Home</a>
-        <a href="{{ "/animation.html" | relative_url }}" class="btn btn-primary">Animation</a>
-        <a href="{{ "/games.html" | relative_url }}" class="btn btn-primary">Games</a>
-        <a href="{{ "/books.html" | relative_url }}" class="btn btn-primary">Books & Comics</a>
-        <a href="{{ "/superbenjiweb.html" | relative_url }}" class="btn btn-primary">Super Benji Web</a>
-        <a href="{{ "/othercontent.html" | relative_url }}" class="btn btn-primary">Extra Content</a>
-      </nav><br><br>
-      {{ content }}
-      <footer>
-      <small>
-          <p>&copy 2025 FC Studios</p>
-          <a href="https://discord.com/invite/3D26R47E">Discord</a> <a href="https://www.youtube.com/@SuperBenjiOfficial">YouTube</a> <a href="https://x.com/SuperBenjiShow">X/Twitter</a>
-      </small>
-      </footer>
+          <a class="navlink" href="/">Home</a> - 
+          <a class="navlink" href="/animation.html">Animation</a> - 
+          <a class="navlink" href="/games.html">Games</a> - 
+          <a class="navlink" href="/books.html">Books & Comics</a> - 
+          <a class="navlink" href="/superbenjiweb.html">Super Benji Web</a> - 
+          <a class="navlink" href="/othercontent.html">Extra Content</a>
+        </nav>
+      </header>
+      <div class="main">
+        {{ content }}
+        <footer>
+        <small>
+            <p>&copy 2025 FC Studios</p>
+            <a href="https://discord.com/invite/3D26R47E">Discord</a> <a href="https://www.youtube.com/@SuperBenjiOfficial">YouTube</a> <a href="https://x.com/SuperBenjiShow">X/Twitter</a>
+        </small>
+        </footer>
+      </div>
     </div>
   </body>
 </html>
