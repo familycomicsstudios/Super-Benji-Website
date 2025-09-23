@@ -85,7 +85,7 @@ Jean and Dave walked past the village, and walked over a large string of mountai
 giant chestnut at the top embedded into one of the mountain peaks. After walking through the mountain
 range, they passed through the other side of the forest and back into the grassy field area.
 
-As they settled down for the night, Dave made a map of the island, which you can view below.
+As they settled down for the night, Dave made a map of the island, and then went to bed.
 
 ---
 
