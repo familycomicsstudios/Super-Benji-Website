@@ -8,6 +8,12 @@
     <changefreq>weekly</changefreq>
   </url>
 
+  <url>
+    <loc>https://superbenji.themadpunter.tech/superbenjiweb.html</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
   <!-- Major Sections -->
   <url>
     <loc>https://superbenji.themadpunter.tech/animation.html</loc>
