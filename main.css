@@ -1,16 +1,51 @@
+:root {
+    --ink: #ebefff;
+    --ink-soft: #a7b4da;
+    --sun: #ff0038;
+    --mint: #0094ff;
+    --paper: #040406;
+    --card: #0b0d14;
+    --card-soft: #111525;
+    --edge: #2a3f78;
+    --shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+    --radius: 12px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    padding: 2% 5%; /* Outer padding to show background */
+    padding: 0;
     min-height: 100vh;
-    background: linear-gradient(180deg, rgba(0, 37, 110, 1) 47%, rgba(0, 125, 12, 1) 100%);
-    background-image: url("background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #eeeeee;
+    color: var(--ink);
+    background: var(--paper);
     font-family: "Arial", sans-serif;
-    display: flex;
-    justify-content: center;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: -8px;
+    background: url("background.png") center / cover no-repeat;
+    filter: blur(2px);
+    transform: scale(1.015);
+    z-index: -2;
+    pointer-events: none;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at 14% 8%, rgba(255, 0, 56, 0.25), transparent 42%),
+        radial-gradient(circle at 84% 6%, rgba(0, 148, 255, 0.28), transparent 45%),
+        rgba(2, 2, 4, 0.74);
+    z-index: -1;
+    pointer-events: none;
 }
 
 /* Shared container for header + main */
@@ -18,33 +53,40 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    max-width: 1200px; /* Keeps it from stretching too wide */
     width: 100%;
+    position: relative;
+    z-index: 0;
 }
 
 /* Sticky header that matches main width */
 header {
     position: sticky;
     top: 0;
-    z-index: 1000;
-    background-color: #23272A;
-    padding: 20px;
-    border-bottom: 1px solid #999;
+    z-index: 50;
+    background: rgba(5, 12, 24, 0.82);
+    border-bottom: 1px solid var(--edge);
+    backdrop-filter: blur(8px);
     text-align: center;
-    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.5);
-    border-radius: 8px 8px 0 0; /* Rounded top corners */
+    padding: 20px;
+}
+
+header h1 {
+    color: var(--ink);
+    margin: 0;
+    font-size: 2.5rem;
 }
 
 /* Main content area */
 .main {
     flex: 1;
-    background-color: #23272A;
-    padding: 2%;
+    background: transparent;
+    padding: 2rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
     box-sizing: border-box;
     overflow-y: auto;
     overflow-x: hidden;
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
-    border-radius: 0 0 8px 8px; /* Rounded bottom corners */
 }
 
 /* Responsive images */
@@ -77,12 +119,163 @@ img {
     border: 0;
 }
 
-.btn {
-    margin: 0 2px;
+/* Navigation links */
+.navlink {
+    color: var(--ink-soft);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 600;
 }
 
-.navlink {
-    color: #00ee00;
+.navlink:hover {
+    color: var(--sun);
+}
+
+/* Alternating nav link colors - red, blue, red, blue, etc. */
+nav a:nth-of-type(1) { color: var(--sun); }
+nav a:nth-of-type(1):hover { color: var(--mint); }
+nav a:nth-of-type(2) { color: var(--mint); }
+nav a:nth-of-type(2):hover { color: var(--sun); }
+nav a:nth-of-type(3) { color: var(--sun); }
+nav a:nth-of-type(3):hover { color: var(--mint); }
+nav a:nth-of-type(4) { color: var(--mint); }
+nav a:nth-of-type(4):hover { color: var(--sun); }
+nav a:nth-of-type(5) { color: var(--sun); }
+nav a:nth-of-type(5):hover { color: var(--mint); }
+nav a:nth-of-type(6) { color: var(--mint); }
+nav a:nth-of-type(6):hover { color: var(--sun); }
+
+/* Featured sections styling */
+.featured-section {
+    background: rgba(11, 13, 20, 0.8);
+    border-left: 4px solid var(--sun);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: var(--radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+}
+
+.featured-section p {
+    margin: 12px 0;
+    line-height: 1.7;
+    color: var(--ink-soft);
+}
+
+.featured-section strong {
+    color: var(--sun);
+}
+
+/* Trailer grid for side-by-side layout */
+.trailer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 25px 0;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trailer-item {
+    background: rgba(17, 21, 37, 0.9);
+    padding: 15px;
+    border-radius: var(--radius);
+    border: 1px solid var(--edge);
+    backdrop-filter: blur(4px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trailer-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(0, 148, 255, 0.2);
+}
+
+.trailer-item h4 {
+    margin: 0 0 12px 0;
+    color: var(--mint);
+    text-align: center;
+}
+
+/* Video wrapper for better spacing */
+.video-wrapper {
+    margin: 25px auto;
+    border-radius: var(--radius);
+    overflow: hidden;
+    max-width: 1000px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Learn More section styling */
+.learn-more-section {
+    display: block;
+    margin-top: 30px;
+}
+
+.learn-more-section h3 {
+    color: var(--mint);
+    margin-top: 25px;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--sun);
+}
+
+.learn-more-section p {
+    line-height: 1.7;
+    color: var(--ink-soft);
+}
+
+/* Button-style links */
+.btn-link {
+    color: var(--sun);
     text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
+    transition: color 0.3s ease;
+    background: none;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-link:hover {
+    color: var(--mint);
+    text-decoration: underline;
+}
+
+/* Enhance headings */
+h2 {
+    color: var(--sun);
+    border-bottom: 2px solid var(--mint);
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: var(--mint);
+    margin-bottom: 10px;
+}
+
+p {
+    color: var(--ink-soft);
+}
+
+/* Footer styling */
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--edge);
+    color: var(--ink-soft);
+    text-align: center;
+}
+
+footer a {
+    color: var(--sun);
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--mint);
 }
