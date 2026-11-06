@@ -2,6 +2,7 @@
 layout: story
 title: Banana - Part 1
 date: 2025-09-18
+permalink: /2025/09/18/bananapart1/
 ---
 
 # Banana: Part 1

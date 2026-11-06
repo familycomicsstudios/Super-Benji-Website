@@ -2,6 +2,7 @@
 layout: story
 title: Cooper - Part 1
 date: 2025-09-17
+permalink: /2025/09/17/cooperpart1/
 ---
 ## Cooper: Part 1
 Cooper walks in to the Joe's Sporting goods store, a sporting goods store in Lake Geneva, Wisconsin. He walks up to the counter.

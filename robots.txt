@@ -1,4 +1,6 @@
+---
+---
 User-agent: *
 Allow: /
 
-Sitemap: https://superbenji.themadpunter.tech/sitemap.xml
+Sitemap: {{ site.url }}/sitemap.xml
