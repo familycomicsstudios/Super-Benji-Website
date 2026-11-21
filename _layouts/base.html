@@ -4,7 +4,7 @@
     <title>{{ page.title | default: "Super Benji Official | Super Benji Show, Movies, Games, and Comics" }}</title>
     <link rel="icon" href="/favicon.png">
     <meta charset="UTF-8" />
-    <meta name="description" content="Explore the official Super Benji universe! Watch the Super Benji Show and movie trilogy, play Super Benji games, read comics like The Minion Manifesto, and discover everything about the League of Grace and Dr. Banana. Created by triangle5820 and themadpunter.">
+    <meta name="description" content="{{ page.description | default: 'Explore the official Super Benji universe, including the show, movies, games, comics, the League of Grace, and Dr. Banana.' | escape }}">
     <!-- <link rel="manifest" href="manifest.json" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -14,7 +14,13 @@
     <script src="/bootstrap.min.js" defer></script>
 
     <link rel="stylesheet" href="/main.css">
-    <link rel="canonical" href="{{ site.url }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <meta property="og:site_name" content="Super Benji Official">
+    <meta property="og:title" content="{{ page.title | default: 'Super Benji Official' | escape }}">
+    <meta property="og:description" content="{{ page.description | default: 'Explore the official Super Benji universe, including the show, movies, games, comics, the League of Grace, and Dr. Banana.' | escape }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:type" content="{% if page.story_chapter %}article{% else %}website{% endif %}">
+    <meta name="twitter:card" content="summary">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -33,6 +39,28 @@
   "description": "The Super Benji Show is an animated series and movie trilogy created by triangle5820 and themadpunter. Explore comics, games, and in-depth lore from the Super Benji universe."
 }
     </script>
+    {% if page.story_chapter %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": {{ page.title | jsonify }},
+      "description": {{ page.description | jsonify }},
+      "url": {{ page.url | absolute_url | jsonify }},
+      "inLanguage": "en",
+      "position": {{ page.story_position }},
+      "isPartOf": {
+        "@type": "CollectionPage",
+        "name": "Super Benji Story",
+        "url": "{{ '/story/' | absolute_url }}"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Family Comics Studios"
+      }
+    }
+    </script>
+    {% endif %}
 
   </head>
   <body>
@@ -52,7 +80,7 @@
         {{ content }}
         <footer>
         <small>
-            <p>&copy 2025 FC Studios</p>
+            <p>&copy 2026 FC Studios</p>
             <a href="https://discord.com/invite/3D26R47E">Discord</a> <a href="https://www.youtube.com/@SuperBenjiOfficial">YouTube</a> <a href="https://x.com/SuperBenjiShow">X/Twitter</a>
         </small>
         </footer>
